@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import QRScanner from './components/QRScanner';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App min-h-screen flex items-center justify-center bg-gray-50">
+      <div>
+        <h1 className="text-center text-2xl font-bold mb-6">Asset Tagging System</h1>
+        <QRScanner />
+      </div>
     </div>
   );
 }
